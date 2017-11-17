@@ -1,2 +1,11 @@
 # Projecto-Alpha
-Trabalho Emp - MAquete de Exemplo
+Trabalho Emp - Maquete de Exemplo
+
+Iniciar clicando no ficheiro Trabalho_MainPage.html
+
+Ter em Conta que é apenas uma maquete para servir de exemplo certas funções de uma hipotética Plataforma Digital de Privat Procurement. 
+
+Aceita-se FeedBack.
+
+Made By: Daniel Vaz 
+Powered By: Google
