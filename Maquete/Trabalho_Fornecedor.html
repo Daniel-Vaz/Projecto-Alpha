@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projecto Alpha</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script src="materialize/js/init.js"></script>
+    <script>
+  $(document).ready(function(){
+     $('.carousel').carousel();
+   });
+  </script>
+  <script>  $('.carousel.carousel-slider').carousel({fullWidth: true});</script>
+</head>
+<body >
+  <!--NAV-->
+  <div class="navbar-fixed">
+  <nav class="nav blue darken-4 z-depth-3">
+      <div class="nav-wrapper">
+        <div class="brand-logo center">
+        <a href="Trabalho_MainPage.html"><img href="Trabalho_MainPage.html" src="materialize\logo_site.png" height="60px"></img></a>
+      </div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Bem Vindo</a></li>
+          <li><a class="waves-effect waves-light btn transparent" href="Trabalho_MainPage.html">Saida<i class="material-icons right">exit_to_app</i></a></li>
+        </ul>
+      <div class="row">
+      <form>
+       <div class="input-field col s3">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+       </div>
+     </form>
+     <div class="nav-content col s3">
+       <ul class="tabs tabs-transparent">
+         <li class="tab"><a href="#test1">Perfil</a></li>
+         <li class="tab"><a href="#test2">Catálogo</a></li>
+         <li class="tab"><a href="#">Definições</a></li>
+       </ul>
+     </div>
+     </div>
+      </div>
+</nav>
+</div>
+
+
+<!--Carroussel-->
+<div class="carousel carousel-slider">
+   <div class="carousel-fixed-item center">
+     <a class="btn waves-effect blue-grey darken-4 grey-text darken-text-2">Ajuda</a>
+</div>
+  <a class="carousel-item" href="#three!"><img src="https://cdn.shopify.com/s/files/1/0070/7032/files/ecommerce-sales.png?3321"></a>
+  <a class="carousel-item" href="#one!"><img src="https://www.annertech.com/sites/default/files/styles/news_page_main_image/public/images/news/main-image/drupalcon-dublin-here-to-help.jpg?itok=bgg90n0_"></a>
+  <a class="carousel-item" href="#two!"><img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=h9bUnLGlm0uS5GMkkajo8rdwmno%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Ua9hFUezx02rqGTqgCn9ApESozIB27lRGDqporRNDT2e8fef62ho0JLPXBFyRlhJ772HmW9DMn8fA"></a>
+  <a class="carousel-item" href="#one!"><img src="https://www.annertech.com/sites/default/files/styles/news_page_main_image/public/images/news/main-image/drupalcon-dublin-here-to-help.jpg?itok=bgg90n0_"></a>
+</div>
+
+
+<!--Tabs-->
+<div class="row">
+  <div class="col s12">
+    <ul class="tabs tabs-fixed-width blue-grey darken-4">
+      <li class="tab col s3"><a href="#test1" class="white-text active">Edição de Perfil <i class="material-icons small">edit</i></a></li>
+      <li class="tab col s3"><a href="#test2" class="white-text">Procura de Clientes <i class="material-icons small">search</i></a></li>
+    </ul>
+  </div>
+  <!--Edição de Perfil-->
+  <div id="test1" class="col s12 blue-grey darken-4 active">
+    <div class="row"><div class="col s12"></div></div>
+    <div class="row">
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s6">
+         <input placeholder="Placeholder" id="first_name" type="text">
+         <label for="first_name">First Name</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="last_name" type="text">
+         <label for="last_name">Last Name</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="password" type="password">
+         <label for="password">Password</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="email" type="email">
+         <label for="email">Email</label>
+       </div>
+     </div>
+   </form>
+ </div>
+  </div>
+  <!--Procura Clientes-->
+  <div id="test2" class="col s12">
+    Test 2
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--FOOTER-->
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s4"><img height="300" width="550" src="materialize/LOGO_nb.png"></img></div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Projecto Alpha</h5>
+          <p class="grey-text text-lighten-4">Uma Maquete de exemplo de um possível Site Oficial</p>
+        </div>
+        <div class="col l5 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Políticas<i class="material-icons small">public</i></a></li>
+            <li><a class="white-text" href="#!">Certificados<i class="material-icons small">nfc</i></a></li>
+            <li><a class="white-text" href="#!">Visão<i class="material-icons small">sentiment_very_satisfied</i></a></li>
+          </ul>
+        </div>
+        <div class="col l5 s12">
+          <h5 class="white-text">Contactos</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Telemóvel<i class="material-icons small">phone</i></a></li>
+            <li><a class="white-text" href="#!">Email<i class="material-icons small">email</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="#">Daniel Vaz</a> #Versão 0.1
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  </body>
+</html>
