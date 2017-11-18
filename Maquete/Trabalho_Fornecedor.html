@@ -19,7 +19,7 @@
   </script>
   <script>  $('.carousel.carousel-slider').carousel({fullWidth: true});</script>
 </head>
-<body >
+<body class="background-image">
   <!--NAV-->
   <div class="navbar-fixed">
   <nav class="nav blue darken-4 z-depth-3">
@@ -68,46 +68,46 @@
 <!--Tabs-->
 <div class="row">
   <div class="col s12">
-    <ul class="tabs tabs-fixed-width blue-grey darken-4">
+    <ul class="tabs tabs-fixed-width blue-grey darken-1">
       <li class="tab col s3"><a href="#test1" class="white-text active">Edição de Perfil <i class="material-icons small">edit</i></a></li>
       <li class="tab col s3"><a href="#test2" class="white-text">Procura de Clientes <i class="material-icons small">search</i></a></li>
     </ul>
   </div>
   <!--Edição de Perfil-->
   <div id="test1" class="col s12 blue-grey darken-4 active">
-      <span><h5 class="white-text">Informações da Empresa:</h3></span>
+      <span><h5 class="white-text center">Informações da Empresa:</h3></span>
     <div class="row"><div class="col s12"></div></div>
     <div class="row">
    <form class="col s12">
-     <div class="row">
+     <div class="row white-text">
        <div class="input-field col s6">
-         <input id="first_name" type="text">
+         <input id="first_name" placeholder="Big Alpha Scoop" type="text">
          <label for="first_name">Nome da Empresa</label>
        </div>
        <div class="input-field col s6">
-         <input id="last_name" type="text">
+         <input id="last_name" placeholder="213456789" type="text">
          <label for="last_name">NIF</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s6">
-         <input id="Contactos" type="text">
+         <input id="Contactos"  placeholder="912345678" type="text">
          <label for="Contactos">Contactos</label>
        </div>
        <div class="input-field col s6">
-         <input id="Responsavel" type="text">
+         <input id="Responsavel" placeholder="Zé dos Gelados" type="text">
          <label for="Responsavel">Responsável</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s12">
-         <input id="password" type="text">
-         <label for="password">Morada</label>
+         <input id="Morada" placeholder="Rua dos Gelados nº1 R\c Esq." type="text">
+         <label for="Morada">Morada</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s12">
-         <input id="email" type="text">
+         <input id="email" placeholder="Ze_dos_ Gelados@gmail.com"type="text">
          <label for="email">Email</label>
        </div>
      </div>
@@ -116,7 +116,7 @@
     <div class="col s12">
       <div class="card">
         <div class="card-image">
-          <img  height="200px" src="https://scontent.flis9-1.fna.fbcdn.net/v/t31.0-8/616067_10151030950629627_1296850584_o.jpg?oh=f319d833ded90da6f591e39de48df94a&oe=5AAE7556">
+          <img  height="200px" src="materialize/f_logo.png">
           <span class="card-title blue-grey darken-4">Logo</span>
           <a class="btn-floating halfway-fab waves-effect waves-light blue darken-4"><i class="material-icons">add</i></a>
         </div>
@@ -126,7 +126,13 @@
    </form>
  </div>
 <!--Tags de materias produzidos-->
-<span><h5 class="white-text">Materias Disponiveis para Entrega:</h3></span>
+<span><h5 class="white-text center">Materias Disponiveis para Entrega:</h3></span>
+<div class="row container">
+  <div class="input-field col s12 center">
+    <input id="listagem" type="text">
+    <label for="listagem">Listagem:</label>
+  </div>
+</div>
 <div class="row">
   <div class="chip col s1">
     Leite
@@ -229,17 +235,87 @@
     <i class="close material-icons">close</i>
   </div>
 </div>
-<div class="chips"></div>
 <div class="row">
- <button class="btn waves-effect waves-light right col s1" type="submit" name="action">Submeter
+ <button class="btn waves-effect waves-light right col s1 blue darken-4" type="submit" name="action">Submeter
     <i class="material-icons right">send</i>
  </button>
 </div>
   </div>
+</div>
+
 
   <!--Procura Clientes-->
+<div class="blue-grey darken-4">
   <div id="test2" class="col s12">
-    Test 2
+
+    <div class="row " >
+    <div class="col s6">
+      <div class="card small blue-grey darken-1 white-text">
+        <div class="card-image">
+          <img src="https://brandongaille.com/wp-content/uploads/2013/12/Ben-and-Jerrys-Company-Logo.jpg">
+        </div>
+        <div class="card-content">
+          <div class="card-title center">Ben and Jerrys</div>
+        </div>
+      </div>
+    </div>
+    <div class="col s6">
+      <div class="card small blue-grey darken-1 white-text">
+        <div class="card-image">
+          <img src="https://www.havmor.com//wp-content/themes/icecream/images/havmor-logo.png">
+        </div>
+        <div class="card-content">
+          <div class="card-title center">Havmor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" >
+  <div class="col s3">
+    <div class="card small blue-grey darken-1 white-text">
+      <div class="card-image">
+        <img src="https://brandongaille.com/wp-content/uploads/2014/03/Dreyers-Company-Logo.png">
+      </div>
+      <div class="card-content">
+        <div class="card-title center">Dreyers Company</div>
+      </div>
+    </div>
+  </div>
+  <div class="col s3">
+    <div class="card small blue-grey darken-1 white-text">
+      <div class="card-image">
+        <img src="http://neworleansicecream.com/wp-content/uploads/2012/12/PoboyLogoWeb.png">
+      </div>
+      <div class="card-content">
+        <div class="card-title center">PoBoy</div>
+      </div>
+    </div>
+  </div>
+  <div class="col s6">
+    <div class="card small blue-grey darken-1 white-text">
+      <div class="card-image">
+        <img src="https://vignette3.wikia.nocookie.net/logopedia/images/0/04/Magnum_logo_2003.png/revision/latest?cb=20100105170350">
+      </div>
+      <div class="card-content">
+        <div class="card-title center">Magnum</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" >
+<div class="col s12">
+  <div class="card small blue-grey darken-1 white-text">
+    <div class="card-image">
+      <img src="http://static1.squarespace.com/static/5385208ee4b0bc5722d7cde6/t/56ba66008259b5fc1ed49ccc/1509722683434/?format=1500w">
+    </div>
+    <div class="card-content">
+      <div class="card-title center">Dothan Icecream</div>
+    </div>
+  </div>
+</div>
+</div>
+
   </div>
 </div>
 
