@@ -18,36 +18,6 @@
    });
   </script>
   <script>  $('.carousel.carousel-slider').carousel({fullWidth: true});</script>
-  <script>
-  var chip = {
-    tag: 'chip content',
-  };
-  $('.chips').material_chip();
-  $('.chips-initial').material_chip({
-    data: [{
-      tag: 'Apple',
-    }, {
-      tag: 'Microsoft',
-    }, {
-      tag: 'Google',
-    }],
-  });
-  $('.chips-placeholder').material_chip({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
-  });
-  $('.chips-autocomplete').material_chip({
-    autocompleteOptions: {
-      data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
-      },
-      limit: Infinity,
-      minLength: 1
-    }
-  });
-  </script>
 </head>
 <body >
   <!--NAV-->
@@ -283,38 +253,30 @@
 
 
 
-  <!--FOOTER-->
-  <footer class="page-footer blue-grey darken-4">
-    <div class="container">
-      <div class="row">
-        <div class="col s4"><img height="300" width="550" src="materialize/LOGO_nb.png"></img></div>
-        <div class="col l6 s12">
-          <h5 class="white-text">Projecto Alpha</h5>
-          <p class="grey-text text-lighten-4">Uma Maquete de exemplo de um possível Site Oficial</p>
-        </div>
-        <div class="col l5 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Políticas<i class="material-icons small">public</i></a></li>
-            <li><a class="white-text" href="#!">Certificados<i class="material-icons small">nfc</i></a></li>
-            <li><a class="white-text" href="#!">Visão<i class="material-icons small">sentiment_very_satisfied</i></a></li>
-          </ul>
-        </div>
-        <div class="col l5 s12">
-          <h5 class="white-text">Contactos</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Telemóvel<i class="material-icons small">phone</i></a></li>
-            <li><a class="white-text" href="#!">Email<i class="material-icons small">email</i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="#">Daniel Vaz</a> #Versão 0.1
-      </div>
-    </div>
-  </footer>
-  <!--  Scripts-->
-  </body>
+<!--FOOTER-->
+<footer class="page-footer blue-grey darken-4">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Projecto Alpha</h5>
+               <p class="grey-text text-lighten-4">Uma Maquete de Exemplo de um possível Site Official. </p>
+             </div>
+             <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Contactos <i class="material-icons">call</i></h5>
+               <ul>
+                 <li><a class="grey-text text-lighten-3" href="#!">Telemóvel</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Email</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Fax</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           © 2017 Copyright Text
+           <a class="grey-text text-lighten-4 right" href="#!">Made By@Vaz</a>
+           </div>
+         </div>
+       </footer>
+</body>
 </html>
