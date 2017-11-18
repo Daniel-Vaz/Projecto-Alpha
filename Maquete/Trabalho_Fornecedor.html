@@ -18,6 +18,36 @@
    });
   </script>
   <script>  $('.carousel.carousel-slider').carousel({fullWidth: true});</script>
+  <script>
+  var chip = {
+    tag: 'chip content',
+  };
+  $('.chips').material_chip();
+  $('.chips-initial').material_chip({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').material_chip({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+  </script>
 </head>
 <body >
   <!--NAV-->
@@ -75,34 +105,168 @@
   </div>
   <!--Edição de Perfil-->
   <div id="test1" class="col s12 blue-grey darken-4 active">
+      <span><h5 class="white-text">Informações da Empresa:</h3></span>
     <div class="row"><div class="col s12"></div></div>
     <div class="row">
    <form class="col s12">
      <div class="row">
        <div class="input-field col s6">
-         <input placeholder="Placeholder" id="first_name" type="text">
-         <label for="first_name">First Name</label>
+         <input id="first_name" type="text">
+         <label for="first_name">Nome da Empresa</label>
        </div>
        <div class="input-field col s6">
          <input id="last_name" type="text">
-         <label for="last_name">Last Name</label>
+         <label for="last_name">NIF</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="Contactos" type="text">
+         <label for="Contactos">Contactos</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="Responsavel" type="text">
+         <label for="Responsavel">Responsável</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s12">
-         <input id="password" type="password">
-         <label for="password">Password</label>
+         <input id="password" type="text">
+         <label for="password">Morada</label>
        </div>
      </div>
      <div class="row">
        <div class="input-field col s12">
-         <input id="email" type="email">
+         <input id="email" type="text">
          <label for="email">Email</label>
        </div>
      </div>
+  <!--Logos-->
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image">
+          <img  height="200px" src="https://scontent.flis9-1.fna.fbcdn.net/v/t31.0-8/616067_10151030950629627_1296850584_o.jpg?oh=f319d833ded90da6f591e39de48df94a&oe=5AAE7556">
+          <span class="card-title blue-grey darken-4">Logo</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light blue darken-4"><i class="material-icons">add</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
    </form>
  </div>
+<!--Tags de materias produzidos-->
+<span><h5 class="white-text">Materias Disponiveis para Entrega:</h3></span>
+<div class="row">
+  <div class="chip col s1">
+    Leite
+    <i class="close material-icons">close</i>
   </div>
+  <div class="chip col s1">
+    Açucar
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Ovos
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Chocolate em Pó
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Chocola Branco
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Chocolate de Leite
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Chocolate Negro
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Açucar Baunilhado
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Corante Red
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Corante Azul
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Corante Amarel
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Pepitas
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Smarties
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Mini Milk's
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Gelo
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Fruta Desidr.
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Mini KitKat's
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Mini Lion's
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Caramelo Líquid
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Mini Caramelos
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Iogurthe Gregro
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Compota Seca
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Compota- Pera
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Manteiga
+    <i class="close material-icons">close</i>
+  </div>
+  <div class="chip col s1">
+    Molho Morango
+    <i class="close material-icons">close</i>
+  </div>
+</div>
+<div class="chips"></div>
+<div class="row">
+ <button class="btn waves-effect waves-light right col s1" type="submit" name="action">Submeter
+    <i class="material-icons right">send</i>
+ </button>
+</div>
+  </div>
+
   <!--Procura Clientes-->
   <div id="test2" class="col s12">
     Test 2
