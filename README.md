@@ -7,5 +7,10 @@ Ter em Conta que é apenas uma maquete para servir de exemplo certas funções d
 
 Aceita-se FeedBack.
 
+To Do:
+- Revisão visual das Páginas;
+- Conclusão das Páginas na Secção " Cliente";
+- Profit ?
+
 Made By: Daniel Vaz 
-Powered By: Google
+Powered By: Google Materialize (http://materializecss.com/)
